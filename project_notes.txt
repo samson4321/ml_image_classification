@@ -1,0 +1,18 @@
+Project Notes - Task 2
+
+- Ensure dataset paths are correct before running the notebook
+- Image size is fixed at 128x128 for all models
+- Batch size is set to 8
+- Data augmentation is used to reduce overfitting
+- ResNet50 uses ImageNet pretrained weights
+- Evaluation includes both statistical and visual metrics
+- GPU is recommended for faster training
+
+Common Issues:
+- Missing dataset folders
+- Incorrect class labels
+- TensorFlow version mismatch
+
+Recommended:
+- Use a virtual environment
+- Run on Google Colab or GPU-enabled system
