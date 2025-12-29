@@ -1,4 +1,4 @@
-# Task-2: Image Data Exploration & Classification
+# Image Data Exploration & Classification
 
 This project performs **image data exploration and image classification** using deep learning in Python.
 It includes dataset loading, visualization, model training, and evaluation using standard performance metrics.
