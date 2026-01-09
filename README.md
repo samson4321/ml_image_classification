@@ -16,6 +16,7 @@ Transfer learning with a pretrained ResNet50 model is used to study how high-lev
 ---
 
 ## Dataset Structure
+
 dataset/
 ├── Training/
 │ ├── class_1/
