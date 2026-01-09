@@ -1,78 +1,85 @@
-# Image Data Exploration & Classification
-
-This project performs **image data exploration and image classification** using deep learning in Python.
-It includes dataset loading, visualization, model training, and evaluation using standard performance metrics.
+# Image Data Exploration and Classification Using Transfer Learning
 
 ## Overview
-- Load and explore training and testing image datasets
-- Visualize class distributions
-- Prepare data generators with augmentation
-- Train an image classification model
-- Apply **Transfer Learning using ResNet50 (ImageNet weights)**
-- Evaluate the model using multiple metrics
+This project explores image data and applies deep learning techniques for image classification as part of my MSc training in Biomedical Engineering. The objective is to gain hands-on experience in image preprocessing, dataset exploration, model development, and evaluation using modern convolutional neural networks.
 
-## Technologies Used
-- Python
-- TensorFlow / Keras
-- NumPy, Pandas
-- Matplotlib, Seaborn
-- PIL (Image Processing)
-- Scikit-learn
+Transfer learning with a pretrained ResNet50 model is used to study how high-level image features can be adapted to a new classification task.
+
+---
+
+## Objectives
+- Explore and visualize image datasets and class distributions  
+- Apply image preprocessing and data augmentation techniques  
+- Train an image classification model using transfer learning  
+- Evaluate model performance using clinically relevant metrics  
+
+---
 
 ## Dataset Structure
-```
 dataset/
- ├── Training/
- │    ├── class_1/
- │    ├── class_2/
- │    └── ...
- └── Testing/
-      ├── class_1/
-      ├── class_2/
-      └── ...
+├── Training/
+│ ├── class_1/
+│ ├── class_2/
+│ └── ...
+└── Testing/
+├── class_1/
+├── class_2/
+└── ...
 
-      README.md
-      txt
-```
+---
 
-## Key Steps
-1. **Data Exploration**
-   - Count images per class
-   - Visualize class distribution
+## Methodology
 
-2. **Data Preprocessing**
-   - Image resizing (128x128)
-   - Data augmentation
-   - Train / validation split
+### 1. Image Data Exploration
+- Visualization of sample images  
+- Analysis of class distributions  
+- Inspection of dataset balance  
 
-3. **Modeling**
-   - CNN and Transfer Learning using **ResNet50**
-   - Pretrained ImageNet weights
-   - Fine-tuning for classification
+### 2. Image Preprocessing
+- Image resizing to 128 × 128  
+- Data normalization  
+- Data augmentation (rotation, flipping, zooming)  
+- Train/validation split  
 
-4. **Evaluation Metrics**
-   - Accuracy
-   - Confusion Matrix
-   - Sensitivity (Recall)
-   - Specificity
-   - F1-Score
+### 3. Modeling
+- Convolutional Neural Network using **ResNet50**  
+- Pretrained ImageNet weights  
+- Transfer learning with fine-tuning of selected layers  
 
-## How to Run
-1. Install required libraries:
-   ```bash
-   pip install tensorflow numpy pandas matplotlib seaborn scikit-learn pillow
-   ```
-2. Place the dataset in the correct folder structure.
-3. Open and run the Jupyter Notebook:
-   ```bash
-   jupyter notebook
-   ```
-4. Execute all cells sequentially.
+### 4. Evaluation
+Model performance is assessed using:
+- Accuracy  
+- Confusion matrix  
+- Sensitivity (Recall)  
+- Specificity  
+- F1-score  
 
-## Output
-- Trained classification model
-- Performance metrics and plots
-- Saved model file
+---
+
+## Results
+- The trained model successfully learned discriminative image features  
+- Transfer learning improved convergence speed and classification performance  
+- Evaluation metrics highlight strengths and limitations across classes  
+
+---
+
+## Learning Outcomes
+- Practical experience in image preprocessing and augmentation  
+- Understanding of transfer learning for image classification  
+- Model evaluation beyond accuracy using sensitivity and specificity  
+- Insight into strengths and limitations of deep learning models  
+
+---
+
+## Technologies Used
+- Python  
+- TensorFlow / Keras  
+- NumPy, Pandas  
+- Matplotlib  
+- scikit-learn  
+- PIL  
+
+---
 
 ## Notes
-This notebook is intended for academic and learning purposes.
+This project is intended for academic and learning purposes. Model performance depends on dataset quality and size, and results are not intended for deployment without further validation.
